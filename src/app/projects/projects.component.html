@@ -1,0 +1,25 @@
+<div class="projects-section">
+  <h2>Projects</h2>
+
+  <div class="project-card" *ngFor="let project of visibleProjects">
+    <div class="project-info">
+      <h3>{{ project.title }}</h3>
+      <p *ngIf="project.date || project.organization">
+        <span *ngIf="project.date">{{ project.date }}</span>
+        <span *ngIf="project.date && project.organization"> | </span>
+        <span *ngIf="project.organization">{{ project.organization }}</span>
+      </p>
+      <p class="description">{{ project.description }}</p>
+
+      <div class="tech-stack" *ngIf="project.tech.length">
+        <span class="badge" *ngFor="let tech of project.tech">{{ tech }}</span>
+      </div>
+
+      <a *ngIf="project.isCaseStudy" href="#" class="case-study-link">Show project ↗</a>
+    </div>
+  </div>
+
+  <button class="toggle-btn" (click)="toggleShowAll()">
+    {{ showAll ? 'Show less ▲' : 'Show all ' + projects.length + ' projects ➔' }}
+  </button>
+</div>

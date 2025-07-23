@@ -1,0 +1,18 @@
+
+ <div class="experience-section">
+  <div *ngFor="let exp of visibleExperiences">
+    <div class="experience-card">
+      <img [src]="exp.logo" alt="{{ exp.company }}" class="company-logo" />
+      <div class="experience-info">
+        <h4>{{ exp.role }}</h4>
+        <p class="company">{{ exp.company }} · {{ exp.type }}</p>
+        <p class="duration">{{ exp.duration }} · {{ exp.location }}</p>
+        <p class="skills">💎 <b>{{ exp.skills }}</b></p>
+      </div>
+    </div>
+  </div>
+
+  <button class="toggle-btn" (click)="toggleShowAll()">
+    {{ showAll ? 'Show less ▲' : 'Show all ' + experiences.length + ' experiences ➔' }}
+  </button>
+</div>

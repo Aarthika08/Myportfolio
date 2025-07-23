@@ -1,0 +1,63 @@
+.projects-section {
+  padding: 1rem;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.2rem;
+}
+
+.project-info {
+  h3 {
+    margin: 0 0 0.3rem 0;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin: 0.2rem 0;
+  }
+
+  .description {
+    margin: 0.5rem 0;
+    color: #444;
+  }
+
+  .tech-stack {
+    margin-top: 0.5rem;
+
+    .badge {
+      display: inline-block;
+      background-color: #eef3f8;
+      color: #333;
+      padding: 4px 8px;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+  }
+
+  .case-study-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #0073b1;
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #0073b1;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}

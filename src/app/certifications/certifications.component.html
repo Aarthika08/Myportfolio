@@ -1,0 +1,16 @@
+<div class="certification-section">
+  <h2>Certifications</h2>
+
+  <div class="cert-card" *ngFor="let cert of visibleCerts">
+    <img [src]="cert.logo" [alt]="cert.issuer" class="cert-logo" />
+    <div class="cert-info">
+      <h3>{{ cert.title }}</h3>
+      <p><strong>{{ cert.issuer }}</strong></p>
+      <p class="date">Issued {{ cert.date }}</p>
+    </div>
+  </div>
+
+  <button class="toggle-btn" (click)="toggleShowAll()">
+    {{ showAll ? 'Show less ▲' : 'Show all ' + certifications.length + ' certifications ➔' }}
+  </button>
+</div>

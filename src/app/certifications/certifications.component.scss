@@ -1,0 +1,44 @@
+.certification-section {
+  padding: 1rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.cert-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.cert-info {
+  h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .date {
+    color: #666;
+    font-size: 0.9rem;
+  }
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #0073b1;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
